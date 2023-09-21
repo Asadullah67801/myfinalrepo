@@ -1,2 +1,4 @@
 my new text file
 here is a feature branch text
+my new life
+this is new life
