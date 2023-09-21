@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Foodorderwebsite</title>
+</head>
+<body>
+    <header>
+        <h1>Order</h1>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Foods</h2>
+            <ul>
+                <li>
+                    <span>Food item 1</span>
+                    <p>Burger zinger</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <span>Food item 1</span>
+                            <p>Burger zinger</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <span>Food item 1</span>
+                                    <p>Burger zinger</p>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <span>Food item 1</span>
+                                            <p>Burger zinger</p>
+                                            <button class="add-to-cart">Add to Cart</button>
+                                        </li>
+                                        <li>
+                    <span>  Food item 2</span>
+                    <p>Pizza</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
+                <!-- Add more products here -->
+            </ul>
+        </section>
+
+        <section class="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </ul>
+            <button id="place-order">Place Order</button>
+        </section>
+    </main>
+
+    <style>
+        /* Add your CSS styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+header {
+    background-color:rgb(187, 38, 38);
+    color: #fff;
+    text-align: center;
+margin: auto;
+padding:2px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 20px;
+    margin: auto;
+
+}
+.add-to-cart :hover{
+    background-color: red;
+    color: white;
+}
+
+.products, .cart {
+    flex-basis: 45%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.add-to-cart {
+    background-color:black;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#place-order {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+    </style>
+
+
+
+    <script src="script.js"></script>
+    <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const addToCartButtons = document.querySelectorAll(".add-to-cart");
+        const cartItems = document.getElementById("cart-items");
+        const placeOrderButton = document.getElementById("place-order");
+    
+        addToCartButtons.forEach((button) => {
+            button.addEventListener("click", function () {
+                const product = button.parentElement.querySelector("span").textContent;
+                const cartItem = document.createElement("li");
+                cartItem.textContent = product;
+                cartItems.appendChild(cartItem);
+            });
+        });
+    
+        placeOrderButton.addEventListener("click", function () {
+            alert("Order placed successfully!");
+            // You can add code here to send the order data to a server
+            // and perform further actions related to order processing.
+        });
+    });
+</script>
+</body>
+</html>
