@@ -22,8 +22,10 @@
             </nav>
             </div>
        
-                 <div class="links" onclick="display()" action="addcart.html" method="post">  
-                <i class="fa fa-cart-shopping"></i>
+                 <div class="links" onclick="redirectToCart() " method="post">  
+        
+         <i class="fa fa-cart-shopping"></i>
+                
                 <i class="fa fa-heart"></i>
             </div>
         
@@ -33,16 +35,245 @@
     <div class="container">
 
         <div class="container1">
+
     <h1> Eatery </h1>
     <p> Fast food and asian cuisine</p>
     </div>
 </div>
 <section class="firstsec">
-    
+    <h2> Explore menu  </h2>
+   
+
+<div class="row">
+    <div class="card">
+        <img src="https://www.kfcpakistan.com/images/afc4e8b0-ff99-11ed-8640-872ee63b5da0-Krunch-2023-05-31095826.png" >
+        <div class="content">
+            <span>every day value</span>
+          </div>
+</div>
+<div class="card">
+    <img src="https://www.kfcpakistan.com/images/43a9fb50-ffaa-11ed-8180-812e571998fe-zingeratha_variant_0-2023-05-31115706.png" >
+    <div class="content">
+  <span>Zingeratha</span>
+</div>
+</div>
+<div class="card">
+    <img src="https://www.kfcpakistan.com/images/43a95f10-ffaa-11ed-b673-4121381f04c6-rice-and-spice_variant_0-2023-05-31115706.png" >
+    <div class="content">
+        <span>Rice and spice</span>
+      </div>
+     
+        
+</div>
+<div class="card">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.9WJX9SkpzpPPYN8_VbDjxgHaEK&pid=Api&P=0&h=220" >
+    <div class="content">
+        <span>Ice creams</span>
+      </div>
+     
+        
+</div>
+<div class="card">
+    <img src="https://www.kfcpakistan.com/images/43aa4970-ffaa-11ed-9c55-3705f003c528-3pc-Chikcen_variant_0-2023-05-31115706.png" >
+    <div class="content">
+        <span>3 Pieces chicken</span>
+      </div>
+     
+        
+</div>
+</div>
+
+
 </section>
+<section class="beverages">
+    <h1>Beverages </h1>
+    <div class="rowflex">
+        <div class="card-d">
+            <div class="contentd">
+                <img src="https://www.kfcpakistan.com/images/33685b40-0461-11ee-911c-497570899609-pepsicopy_variant_0-2023-06-06115641.png">
+                <h4>Pepsi</h4>
+                <p> Price 200 Rs</p>
+            </div>
+        </div>
+        <div class="card-d">
+            <div class="contentd">
+                <img src="https://www.kfcpakistan.com/images/6249b820-0513-11ee-9e45-cb0ed000d4a6-7up_variant_0-2023-06-07091210.png">
+                <h4>Seven up</h4>
+                <p> Price 100 Rs</p>
+            </div>
+        </div>
+        <div class="card-d">
+            <div class="contentd">
+                <img src="https://www.kfcpakistan.com/images/337af8e0-0461-11ee-a89a-612c84c58a93-Mirinda_variant_0-2023-06-06115641.png">
+                <h4>Mirinda</h4>
+                <p> Price 100 Rs</p>
+            </div>
+        </div>
+        <div class="card-d">
+            <div class="contentd">
+                <img src="https://www.kfcpakistan.com/images/337af8e0-0461-11ee-a89a-612c84c58a93-Dew_variant_0-2023-06-06115641.png">
+                <h4>DEW</h4>
+                <p> Price 100 Rs</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+<footer class="footer">
+    <div class="content">
+        
+    </div>
+</footer>
 
 
-    <style>
+<style>
+    span{
+        color: white;
+    }
+    .rowflex{
+        display:flex;
+        justify-content: center;
+
+    }
+    .card-d  p{
+        text-align: center;
+    }
+    .card-d h4{
+        margin-bottom: 10px;
+        text-align: center;
+
+    }
+    .card-d{
+        margin:10px;
+ 
+       height:140px;
+       width: 100px;
+        
+    }
+    .card-d img{
+        transition: 0.2s;  transition: 0.2s;
+    }
+    .card-d img:hover{
+        transform: scale(1.1);
+    }
+    .card-d img{
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+background-color: red;
+        width:100px;
+        height:100px;
+    }
+    .firstsec h2{
+        position: relative;
+    }
+    .firstsec h2:before{
+            content: '';
+            top:100%;
+            width:50px;
+            background-color: red;
+            height:3px;
+            left:0px;
+            position: absolute;
+            margin-top: 6px;
+        }
+    .firstsec h2{
+        color:white;
+    }
+    .contentd{
+        color:white;
+    }
+    section {
+        background-color: #1B1715;
+    }
+    section h1{
+        color:white;
+    }
+    .contentp{
+        color: white;
+    }
+        .beverages{
+            padding: 10px 0;
+            margin:auto;
+
+        }
+        .contactinfo img{
+            border-radius: 50%;
+            height:30px;
+            width:30px;
+            margin-left: 10px;
+            margin-top: 2px;
+        }
+        .beverages h1{
+            margin-left: 20px;
+        }
+        .beverages h1{
+            position: relative;
+        }
+        .beverages h1:before{
+            content: '';
+            top:100%;
+            width:50px;
+            background-color: red;
+            height:3px;
+            left:0px;
+            position: absolute;
+            margin-top: 6px;
+        }
+
+        .firstsec{
+            padding: 50px 0;
+            margin:auto;
+            width:100%;
+          
+        }
+        .firstsec h2{
+            position: relative;
+            margin-left: 20px;
+        }
+        .card{
+    
+            margin: 10px;
+         
+        }
+        .card img {
+            background-color:black;
+            height:120px;
+            position: relative;
+            width:100px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 30px;
+  
+            transition:transform 0.3s;
+        }
+        .navlinks ul li:hover{
+            color:red;
+        }
+        .card img{
+            transform: scale(1.1);
+        }
+        .row{
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+        }
+         h2::before{
+background-color: red;
+
+content: '';
+left:0px;
+width:90px;
+top: 100%;
+position:absolute;
+z-index: -1;
+height: 3px;
+margin-top: 5px;
+
+ 
+        }
+       
         .container1 h1{
             color: white;
             margin-bottom: 10px;
@@ -51,6 +282,10 @@
         .container1 p{
             font-size: 28px;
             color:white;
+        }
+     
+        .fa:hover{
+            color:red;
         }
         .container1{
             transform: translate(-50%,-50%);
@@ -107,9 +342,7 @@
         header{
             height:30px;
         }
-        .contactinfo img{
-            height:40px;
-        }
+       
         .fa{
             margin: 5px;
         }
@@ -117,9 +350,12 @@
 
 
 <script>
-    function display(){
- 
+      function redirectToCart() {
+        // Use window.location to navigate to the cart page
+        window.location.href = "addcart.html";
     }
+ 
+    
 </script>
 </body>
 </html>
