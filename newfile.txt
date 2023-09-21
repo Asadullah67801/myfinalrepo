@@ -1,1 +1,1 @@
-hello this is webdevelopment course in html css only
+hello this is webdevelopment course in html css and javascript only
